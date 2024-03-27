@@ -11,6 +11,7 @@ B -> D
 C -> E
 D -> F
 E -> G…
+
 Exp:
 Orijinal : "HELLO"
 ROT2 : " JGNNQ " (When the shift amount is taken as 2)
@@ -25,6 +26,7 @@ B -> C
 C -> D
 D -> E
 E -> F…
+
 Exp:
 Orijinal : "HELLO"
 Ceaser: "IFMMP" (When the shift amount is taken as 1)
