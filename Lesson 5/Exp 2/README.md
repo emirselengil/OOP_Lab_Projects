@@ -1,4 +1,4 @@
-Experiment 2 – ListBox Configuration
+Experiment 2 – ComboBox Configuration
 
 Create a "shoe ordering system". The user will be able to create an order via this screen. User 
 enters name-surname and phone information into TextBox fields. Selects a model from the shoe 
