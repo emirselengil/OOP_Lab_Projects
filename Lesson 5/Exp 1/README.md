@@ -1,4 +1,4 @@
-Exercise 1 – ListBox Configuration
+Experiment 1 – ListBox Configuration
 
 Create a "food ordering system". The user will be able to create an order via this screen. User
 enters name-surname and phone information into TextBox fields. Selects one of the dishes with
