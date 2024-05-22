@@ -1,4 +1,4 @@
-Experimen – Memory Game
+Experiment – Memory Game
 
 Design a memory game. For this, a main form screen opens and there is a start game button on 
 the main form. When the button is clicked, 2 different forms will open (2 users). In these opened 
