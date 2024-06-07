@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B799A9A-B600-49FA-87A6-7CE72FC074B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hub</RootNamespace>
+    <AssemblyName>Hub</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddReminderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReminderForm.Designer.cs">
+      <DependentUpon>AddReminderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cloneUser.cs" />
+    <Compile Include="Contacts.cs" />
+    <Compile Include="createNoteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="createNoteControl.Designer.cs">
+      <DependentUpon>createNoteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Factories\MeetingReminderFactory.cs" />
+    <Compile Include="Factories\ReminderFactory.cs" />
+    <Compile Include="Factories\TaskReminderFactory.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hub.Designer.cs">
+      <DependentUpon>Hub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managementcontrolform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="managementcontrolform.Designer.cs">
+      <DependentUpon>managementcontrolform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ReminderManager.cs" />
+    <Compile Include="Models\MeetingReminder.cs" />
+    <Compile Include="Models\Reminder.cs" />
+    <Compile Include="Models\TaskReminder.cs" />
+    <Compile Include="notesForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="notesForm.Designer.cs">
+      <DependentUpon>notesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Observers\IReminderObserver.cs" />
+    <Compile Include="Observers\ReminderNotification.cs" />
+    <Compile Include="phonebook form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="phonebook form.Designer.cs">
+      <DependentUpon>phonebook form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PI.Designer.cs">
+      <DependentUpon>PI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="password.Designer.cs">
+      <DependentUpon>password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReminderAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReminderAlertForm.Designer.cs">
+      <DependentUpon>ReminderAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReminderMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReminderMain.Designer.cs">
+      <DependentUpon>ReminderMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salarycalculaterform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="salarycalculaterform.Designer.cs">
+      <DependentUpon>salarycalculaterform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="viewNotesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewNotesControl.Designer.cs">
+      <DependentUpon>viewNotesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRemindersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRemindersForm.Designer.cs">
+      <DependentUpon>ViewRemindersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddReminderForm.resx">
+      <DependentUpon>AddReminderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="createNoteControl.resx">
+      <DependentUpon>createNoteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hub.resx">
+      <DependentUpon>Hub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managementcontrolform.resx">
+      <DependentUpon>managementcontrolform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notesForm.resx">
+      <DependentUpon>notesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phonebook form.resx">
+      <DependentUpon>phonebook form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PI.resx">
+      <DependentUpon>PI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReminderAlertForm.resx">
+      <DependentUpon>ReminderAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReminderMain.resx">
+      <DependentUpon>ReminderMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salarycalculaterform.resx">
+      <DependentUpon>salarycalculaterform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewNotesControl.resx">
+      <DependentUpon>viewNotesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRemindersForm.resx">
+      <DependentUpon>ViewRemindersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Hub.exe.config" />
+    <None Include="bin\Debug\notes.csv" />
+    <None Include="bin\Debug\phonebook.csv" />
+    <None Include="bin\Debug\userProfiles.csv" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contacts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdasdasdas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stand-by.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\base64image.txt" />
+    <Content Include="bin\Debug\Hub.exe" />
+    <Content Include="bin\Debug\Hub.pdb" />
+    <Content Include="Hub.sln" />
+    <None Include="Resources\delete_icon.png" />
+    <None Include="Resources\save_note_icon.png" />
+    <None Include="Resources\view_note_icon1.png" />
+    <None Include="Resources\add_notes_icon.png" />
+    <None Include="Resources\add_reminder_icon.png" />
+    <None Include="Resources\view_note_icon.png" />
+    <None Include="Resources\back1_icon.png" />
+    <None Include="Resources\back2_icon.png" />
+    <None Include="Resources\notesicon1.png" />
+    <None Include="Resources\user_icon.png" />
+    <None Include="Resources\reminder_icon.png" />
+    <None Include="Resources\power_icon.png" />
+    <None Include="Resources\phonebook_icon.png" />
+    <None Include="Resources\notesicon.png" />
+    <None Include="Resources\management_icon.png" />
+    <None Include="Resources\calculate_icon.png" />
+    <None Include="Resources\Synchronize.png" />
+    <None Include="Resources\Paragraf metniniz1.png" />
+    <None Include="Resources\Paragraf metniniz.png" />
+    <None Include="Resources\left-arrow.png" />
+    <None Include="Resources\background.png" />
+    <None Include="Resources\asdasdas %282%29.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\eye.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\passbox.png" />
+    <None Include="Resources\mailbox.png" />
+    <None Include="Resources\kutucuk1.png" />
+    <None Include="Resources\daire.png" />
+    <None Include="Resources\kutucuk.png" />
+    <None Include="Resources\asdasdas.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\alarm.png" />
+    <None Include="Resources\back_button.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\floppy-disk.png" />
+    <None Include="Resources\create1.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\linkedin.png" />
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
