@@ -6,7 +6,7 @@ Bu depo, Nesne Yönelimli Programlama (OOP) laboratuvar dersleri için hazırlan
 
 1. Depoyu bilgisayarınıza indirin veya klonlayın:
    ```sh
-   git clone [<repo_link>](https://github.com/emirselengil/OOP_Lab_Projects.git)
+   git clone https://github.com/emirselengil/OOP_Lab_Projects.git
    ```
 2. Visual Studio veya uyumlu bir IDE kullanarak projeyi açın.
 3. İlgili dersin veya deneyin `Program.cs` dosyasını çalıştırarak uygulamayı test edin.
