@@ -1,17 +1,17 @@
 # OOP Lab Projects
 
-Bu depo, Nesne Yönelimli Programlama (OOP) laboratuvar dersleri için hazırlanmış projeleri içermektedir. Her ders, belirli konuları kapsayan deneylerden (Exp) oluşmaktadır.
+This repository contains projects prepared for Object-Oriented Programming (OOP) laboratory courses. Each lesson consists of experiments (Exp) covering specific topics.
 
-## Nasıl Çalıştırılır?
+## How to Run?
 
-1. Depoyu bilgisayarınıza indirin veya klonlayın:
+1. Download or clone the repository to your computer:
    ```sh
    git clone https://github.com/emirselengil/OOP_Lab_Projects.git
    ```
-2. Visual Studio veya uyumlu bir IDE kullanarak projeyi açın.
-3. İlgili dersin veya deneyin `Program.cs` dosyasını çalıştırarak uygulamayı test edin.
+2. Open the project using Visual Studio or a compatible IDE.
+3. Run the `Program.cs` file of the relevant lesson or experiment to test the application.
 
-## Gereksinimler
+## Requirements
 
-- .NET Framework / .NET Core yüklü olmalıdır.
-- Visual Studio veya başka bir C# geliştirme ortamı önerilir.
+- .NET Framework / .NET Core must be installed.
+- Visual Studio or another C# development environment is recommended.
